@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perodua EV Training Module 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
+body { background:#f5f7fa; color:#1f2937; line-height:1.7; font-size:14px; }
+
+.navbar { display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:white; border-bottom:1px solid #e5e7eb; position: sticky; top:0; z-index:999; }
+.navbar .brand { font-weight:700; color:#d71920; font-size:16px; letter-spacing:1px; }
+.language-switch{ display:flex; }
+.language-switch button{ padding:6px 14px; margin-left:8px; border:none; border-radius:20px; cursor:pointer; font-weight:600; color:#d71920; background:#fff; box-shadow:0 3px 10px rgba(0,0,0,0.05); transition:0.3s; }
+.language-switch button.active{ background:#d71920; color:white; box-shadow:0 4px 12px rgba(215,25,32,0.3); }
+
+.hero{ position:relative; background:url( "Screenshot 2026-02-23 at 4.22.39 PM copy 2.png") center/cover no-repeat; height:350px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; color:white; }
+.hero::after{ content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)); }
+.hero-content{ position:relative; z-index:2; padding:0 20px; }
+.hero h1{ font-size:26px; font-weight:700; margin-bottom:10px; line-height:1.2; }
+.hero p{ font-size:16px; margin-bottom:15px; }
+.hero .btn-primary{ background:#d71920; color:white; padding:12px 20px; border-radius:25px; text-decoration:none; font-weight:700; transition:0.3s; }
+.hero .btn-primary:hover{ background:#b2161b; }
+
+.module-section{ padding:20px; }
+.module-card{ display:flex; flex-direction:column; margin-bottom:25px; background:white; border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,0.06); overflow:hidden; transition:0.3s; }
+.module-card:hover{ transform:translateY(-4px);}
+.module-card img{ width:100%; height:auto; display:block; border-radius:15px; }
+.module-content{ padding:15px 15px; }
+.module-content h2{ color:#d71920; font-size:18px; font-weight:700; margin-bottom:8px; }
+.module-content p{ font-size:15px; text-align:justify; color:#1f2937; line-height:1.8; margin-bottom:12px; }
+.module-content p b{ color:#d71920; }
+
+.summary-section{ padding:20px; }
+.summary-container{ display:flex; flex-direction:column; gap:20px; }
+.summary-text, .summary-poster{ flex:1; }
+.summary-poster img{ width:100%; border-radius:15px; }
+
+footer{ background:white; padding:20px; text-align:center; font-size:13px; color:#4b5563; border-top:1px solid #e5e7eb; }
+
+@media(min-width:768px){
+    .hero h1{ font-size:34px; }
+    .hero p{ font-size:18px; }
+    .module-card{ flex-direction:row; }
+    .module-card:nth-child(even){ flex-direction:row-reverse; }
+    .module-card img{ width:50%; }
+    .module-content{ width:50%; padding:20px; }
+
+    .summary-container{ flex-direction:row; justify-content:space-between; align-items:center; }
+    .summary-text{ padding-right:20px; text-align:left; }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="brand">PERODUA EV MODULE</div>
+    <div class="language-switch">
+        <button class="active" onclick="showEnglish()">EN</button>
+        <button onclick="showMalay()">BM</button>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Module 1: EV Fundamentals</h1>
+        <p>Understanding the Foundation of Electric Mobility</p>
+        <a href="#modules" class="btn-primary">Start Learning</a>
+    </div>
+</section>
+
+<section class="module-section" id="modules">
+
+<!-- =================== ENGLISH =================== -->
+<div id="english">
+
+<!-- Card 1 -->
+
+
+<!-- Card 2 -->
+<div class="module-card">
+    <img src=   "Gemini_Generated_Image_d4kcfhd4kcfhd4kc.png" alt="EV Illustration 2" >
+    <div class="module-content">
+        <h2>What is EV?</h2>
+        <p>The transition to electric mobility begins with clarity. Before discussing charging speed, battery capacity, or driving range, a Sales Advisor must first understand the fundamental question: what exactly is an electric vehicle? Module 1 establishes that foundation. It introduces four core areas of knowledge—what an EV is, the benefits it offers, the types of EVs available, and the different hybrid systems in the market. Without a structured understanding of these basics, later explanations become fragmented.</p>
+		<p>At its most basic level, an electric vehicle is a vehicle propelled by an electric motor rather than a traditional petrol-powered engine. In a conventional internal combustion engine vehicle, petrol is burned to produce energy, a process that creates heat, noise, and exhaust emissions. An EV operates differently. It uses electricity stored in a battery to power an electric motor, and that motor turns the wheels. The core idea is simple: without petrol combustion, there is no engine noise and no dependence on fuel-burning mechanisms for movement. If a vehicle moves fully or primarily through the power of an electric motor, it is classified as an electric vehicle. </p>
+		<p>Understanding this distinction is important because it directly influences the way customers perceive value. Electric vehicles are not merely “cars without petrol”; they represent an entirely different method of converting energy into motion. For many customers, this difference forms the foundation of their interest in EVs. </p>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="module-card">
+    <img src=  "Gemini_Generated_Image_hf44yphf44yphf44.png" alt="EV Illustration 3">
+    <div class="module-content">
+        <h2>Benefits of EV</h2>
+         <p> Today, customers are increasingly considering EVs for a variety of reasons. One of the most significant advantages is higher energy efficiency. In a petrol engine, a substantial amount of energy is lost as heat during combustion. Electric motors, however, convert electrical energy into movement more directly, resulting in less energy waste and better efficiency overall. This improvement is often felt in the smoothness of the drive as well as in the reduction of operating costs.</p> 
+
+<p>Cost savings form another important motivating factor. Electric vehicles contain fewer moving parts than conventional vehicles. They do not require engine oil, spark plugs, or complex transmission systems with multiple gears. This simplified mechanical structure often leads to lower maintenance requirements over time. In addition, the cost of electricity per kilometre is generally lower than the cost of petrol or diesel, making daily operation more economical depending on the charging method and driving style of the customer. </p> 
+
+<p> Environmental considerations also influence customer decisions. EVs produce zero tailpipe emissions during operation. Because there is no combustion process taking place while driving, there is no release of exhaust gases that contribute to urban air pollution. Although overall environmental impact depends on how electricity is generated nationally, the absence of emissions during driving remains a major differentiator and a strong selling point. </p> 
+
+<p>Beyond efficiency and cost, the driving experience of an EV is another factor that attracts customers. Electric motors deliver instant torque, resulting in a smooth and immediate acceleration experience with no delay from gear shifting. The absence of engine noise creates a quieter, more refined, and more comfortable ride overall. For Sales Advisors, the goal is not simply to describe these benefits but to help customers understand how they translate into real personal value greater comfort, longterm savings, and a more responsible mobility choice. </p> 
+
+ 
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="module-card">
+    <img src= "Gemini_Generated_Image_2gy3n62gy3n62gy3.png" alt="EV Illustration 4">
+    <div class="module-content">
+        <h2>Type of EV</h2>
+         <p>In Malaysia, electric vehicles can be grouped into four main categories, and understanding the differences between them is essential for accurate customer guidance. Many customers frequently confuse these categories, and unclear explanations can lead to misunderstandings.</p> 
+
+<p>The first category is the Hybrid Electric Vehicle, or HEV. This type of vehicle uses both a petrol engine and an electric motor, but it cannot be charged externally. Its battery recharges automatically through regenerative braking and through energy produced by the engine. Depending on driving conditions, the vehicle may operate using the motor, the engine, or a combination of both. The key message for this segment is that hybrids are selfcharging and do not require external plugging.</p> 
+
+<p>The second category is the Plugin Hybrid Electric Vehicle, known as the PHEV. Like an HEV, it uses a combination of a petrol engine and an electric motor, but with one crucial difference: it can be plugged in for external charging. A PHEV allows short distances to be driven using electric power alone. When the battery level drops, the petrol engine automatically takes over. The distinction between these two categories is simple yet essential—HEVs cannot be plugged in, whereas PHEVs can.</p> 
+
+<p>The third category is the Battery Electric Vehicle, or BEV. This is a fully electric vehicle powered entirely by electricity. It has no petrol engine. Energy is supplied through a highvoltage battery, and charging can be done using an AC home charger or a DC fast charger at public stations. Since BEVs rely fully on electric power, they produce zero tailpipe emissions. When customers mention “EVs,” they are usually referring specifically to BEVs.</p> 
+
+<p>The fourth category is the Fuel Cell Electric Vehicle, or FCEV. Like BEVs, FCEVs run entirely on electric motors, but they generate electricity onboard using hydrogen fuel cells instead of drawing power from a plugin battery. The only emission produced is water vapour. Although this technology is significant, the limited hydrogen infrastructure in Malaysia means that customers today are far more likely to encounter and consider HEVs, PHEVs, and BEVs rather than fuel cell vehicles.</p> 
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="module-card">
+    <img src=  "Gemini_Generated_Image_zb7vx7zb7vx7zb7v.png" alt="EV Illustration 5">
+    <div class="module-content">
+        <h2>System In hybrid</h2>
+           <p> Within the hybrid segment, the systems themselves vary in terms of how the engine and electric motor interact. Hybrid configurations generally fall into three types: series hybrid, parallel hybrid, and seriesparallel hybrid. While these vehicles may appear similar externally, the internal energy flow, decisionmaking systems, and driving characteristics differ substantially. Each configuration offers its own level of electric assistance, fuel efficiency, and overall driving feel. Understanding these differences equips Sales Advisors to handle customer comparisons with clarity and confidence. </p> 
+
+<p> By the end of this module, the fundamentals of electric vehicles should feel logical and clear rather than technical or intimidating. Electric vehicles are defined by how they generate and use energy. Their benefits stem from improved efficiency, reduced mechanical complexity, and enhanced driving refinement. The categories—HEV, PHEV, BEV, and FCEV—represent various approaches to electrification, each serving a different customer need or preference. </p> 
+
+<p>For Sales Advisors, clarity is a strategic advantage. When you explain EV fundamentals confidently and accurately, customers feel more assured in their decisionmaking process. Knowledge builds credibility. Credibility builds trust. And ultimately, trust shapes purchasing decisions.</p> 
+    </div>
+</div>
+
+
+<!-- SUMMARY SECTION -->
+<section class="summary-section">
+    <div class="summary-container">
+        <div class="summary-text">
+            
+        <div class="summary-poster">
+            <img src=  "unnamed-3.png"   alt="EV Poster">
+        </div>
+    </div>
+</section>
+
+</div> <!-- End English -->
+
+<!-- =================== BM =================== -->
+<div id="malay">
+
+<!-- Card 1 -->
+<div class="module-card">
+    <img src= "Gemini_Generated_Image_zb7vx7zb7vx7zb7v.png" alt="EV Illustration BM 1">
+    <div class="module-content">
+        <h2>Apa Itu EV?</h2>
+        <p> Peralihan ke mobiliti elektrik bermula dengan kefahaman yang jelas. Sebelum bercakap tentang kelajuan pengecasan, kapasiti bateri atau jarak pemanduan, seorang Sales Advisor perlu betul-betul faham soalan paling asas: apa sebenarnya kenderaan elektrik? Modul 1 bina asas itu dulu. Ia terangkan empat perkara utama — apa itu EV, kelebihan yang ditawarkan, jenis-jenis EV yang ada, dan sistem hibrid yang terdapat di pasaran. Kalau asas ini tak difahami dengan tersusun, penerangan seterusnya akan jadi bercampur-campur dan susah nak jelaskan dengan yakin.</p>
+		  <p>
+           Secara ringkas, kenderaan elektrik ialah kenderaan yang bergerak menggunakan motor elektrik, bukan enjin petrol seperti kereta biasa. Dalam kenderaan enjin pembakaran dalaman, petrol dibakar untuk hasilkan tenaga. Proses itu menghasilkan haba, bunyi dan asap ekzos. EV pula beroperasi dengan cara berbeza. Ia menggunakan elektrik yang disimpan dalam bateri untuk menggerakkan motor elektrik, dan motor itu yang memutarkan roda. Konsepnya mudah: tanpa pembakaran petrol, tiada bunyi enjin dan tiada kebergantungan kepada mekanisme pembakaran untuk bergerak. Jika sesebuah kenderaan bergerak sepenuhnya atau kebanyakannya menggunakan kuasa motor elektrik, ia dikategorikan sebagai kenderaan elektrik.
+        </p>
+		<p> Perbezaan ini penting kerana ia mempengaruhi cara pelanggan melihat nilai sesebuah kenderaan. EV bukan sekadar “kereta tanpa petrol”, tetapi satu pendekatan berbeza dalam menukar tenaga kepada pergerakan. Bagi ramai pelanggan, perbezaan inilah yang menjadi sebab utama mereka berminat dengan EV.</p>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="module-card">
+    <img src="ev2.png" alt="EV Illustration BM 2">
+    <div class="module-content">
+        <h2>Kelebihan EV</h2>
+         <p>
+           Hari ini, semakin ramai pelanggan mempertimbangkan EV atas pelbagai sebab. Salah satu kelebihan utama ialah kecekapan tenaga yang lebih tinggi. Dalam enjin petrol, banyak tenaga hilang sebagai haba semasa proses pembakaran. Motor elektrik pula menukarkan tenaga elektrik kepada pergerakan dengan lebih terus dan efisien, jadi pembaziran tenaga jauh lebih rendah. Kesan ini biasanya dapat dirasai melalui pemanduan yang lebih lancar serta kos operasi yang lebih rendah.
+        </p>
+
+        <p>
+            Penjimatan kos juga menjadi faktor penting. Kenderaan elektrik mempunyai lebih sedikit komponen bergerak berbanding kenderaan konvensional. Ia tidak memerlukan minyak enjin, palam pencucuh atau sistem transmisi yang kompleks dengan banyak gear. Struktur mekanikal yang lebih ringkas ini biasanya mengurangkan keperluan penyelenggaraan dalam jangka masa panjang. Selain itu, kos elektrik bagi setiap kilometer selalunya lebih rendah berbanding petrol atau diesel, menjadikan penggunaan harian lebih menjimatkan bergantung kepada cara pengecasan dan gaya pemanduan pelanggan.
+        </p>
+
+        <p>
+          Faktor alam sekitar turut mempengaruhi keputusan pelanggan. EV tidak menghasilkan pelepasan asap ekzos semasa dipandu. Oleh sebab tiada proses pembakaran berlaku ketika bergerak, tiada gas ekzos dilepaskan yang menyumbang kepada pencemaran udara di bandar. Walaupun kesan keseluruhan terhadap alam sekitar bergantung kepada cara elektrik dijana di peringkat negara, ketiadaan pelepasan semasa pemanduan tetap menjadi perbezaan utama dan satu kelebihan yang kuat untuk diketengahkan.
+        </p>
+		<p> Selain kecekapan dan penjimatan, pengalaman pemanduan EV juga menjadi tarikan. Motor elektrik memberikan tork serta-merta, jadi pecutan terasa lebih lancar dan responsif tanpa gangguan pertukaran gear. Tanpa bunyi enjin, pemanduan jadi lebih senyap, lebih halus dan lebih selesa secara keseluruhan. Bagi Sales Advisor, matlamatnya bukan sekadar menyenaraikan kelebihan ini, tetapi membantu pelanggan faham bagaimana semua ini memberi nilai sebenar kepada mereka — lebih selesa, lebih jimat dalam jangka masa panjang, dan pilihan mobiliti yang lebih bertanggungjawab.</p>
+
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="module-card">
+    <img src="ev3.png" alt="EV Illustration BM 3">
+    <div class="module-content">
+        <h2>Jenis-Jenis EV</h2>
+         <p>
+          Di Malaysia, kenderaan elektrik boleh dibahagikan kepada empat kategori utama. Faham perbezaan antara setiap kategori ini sangat penting untuk beri penerangan yang tepat kepada pelanggan. Ramai pelanggan keliru antara satu sama lain, dan kalau penerangan tak jelas, mudah berlaku salah faham.
+        </p>
+
+      <p> Kategori pertama ialah Hybrid Electric Vehicle (HEV). Kenderaan jenis ini menggunakan gabungan enjin petrol dan motor elektrik, tetapi ia tidak boleh dicas menggunakan plug luar. Baterinya akan dicas secara automatik melalui sistem brek regeneratif dan juga tenaga daripada enjin itu sendiri. Bergantung kepada keadaan pemanduan, kereta boleh bergerak menggunakan motor elektrik, enjin petrol, atau kedua-duanya sekali. Perkara paling penting untuk difahami ialah HEV adalah sistem yang mengecas sendiri dan tidak memerlukan pengecasan luaran.</p> 
+		<p> Kategori kedua ialah Plug-in Hybrid Electric Vehicle (PHEV). Sama seperti HEV, ia juga menggunakan enjin petrol dan motor elektrik. Namun perbezaan utamanya ialah PHEV boleh dicas menggunakan plug luar. Ia membolehkan pemanduan jarak pendek menggunakan kuasa elektrik sepenuhnya. Apabila bateri berkurang, enjin petrol akan mengambil alih secara automatik. Bezanya mudah tetapi sangat penting — HEV tidak boleh dicas menggunakan plug, manakala PHEV boleh.</p>
+		<p> Kategori ketiga ialah Battery Electric Vehicle (BEV). Ini ialah kenderaan elektrik sepenuhnya yang hanya menggunakan tenaga elektrik. Ia tidak mempunyai enjin petrol langsung. Tenaga dibekalkan melalui bateri voltan tinggi, dan pengecasan boleh dibuat menggunakan pengecas AC di rumah atau pengecas pantas DC di stesen awam. Oleh kerana BEV bergantung sepenuhnya kepada elektrik, ia tidak menghasilkan asap ekzos semasa dipandu. Biasanya apabila pelanggan sebut “EV”, mereka sebenarnya merujuk kepada BEV.</p>
+		
+		<p> Kategori keempat ialah Fuel Cell Electric Vehicle (FCEV). Seperti BEV, ia juga digerakkan sepenuhnya oleh motor elektrik. Namun bezanya, elektrik dijana dalam kenderaan itu sendiri menggunakan sel bahan api hidrogen, bukan daripada bateri yang dicas melalui plug. Satu-satunya pelepasan yang terhasil ialah wap air. Walaupun teknologi ini penting, infrastruktur hidrogen di Malaysia masih terhad. Jadi pada masa ini, pelanggan lebih banyak berdepan dengan dan mempertimbangkan HEV, PHEV dan BEV berbanding FCEV.</p>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="module-card">
+    <img src="ev4.png" alt="EV Illustration BM 4">
+    <div class="module-content">
+        <h2> Sistem Dalam Hybrid</h2>
+        <p>Dalam kategori hybrid, sistemnya juga berbeza dari segi bagaimana enjin dan motor elektrik bekerjasama. Secara umum, konfigurasi hybrid terbahagi kepada tiga jenis: series hybrid, parallel hybrid, dan series-parallel hybrid. Walaupun dari luar nampak hampir sama, cara aliran tenaga di dalam, sistem kawalan, dan karakter pemanduannya sebenarnya berbeza. Setiap konfigurasi menawarkan tahap bantuan elektrik, kecekapan bahan api, dan rasa pemanduan yang berbeza. Bila faham perbezaan ini, Sales Advisor lebih bersedia untuk jawab perbandingan pelanggan dengan jelas dan yakin.</p>
+		
+		<p> Di akhir modul ini, asas tentang kenderaan elektrik sepatutnya terasa logik dan mudah difahami, bukan teknikal atau mengelirukan. EV ditentukan oleh cara ia menjana dan menggunakan tenaga. Kelebihannya datang daripada kecekapan yang lebih baik, struktur mekanikal yang lebih ringkas, dan pengalaman pemanduan yang lebih halus. Kategori seperti HEV, PHEV, BEV dan FCEV pula menunjukkan pendekatan berbeza dalam elektrifikasi, mengikut keperluan dan pilihan pelanggan yang berbeza.</p>
+		
+		<p> Bagi Sales Advisor, kejelasan adalah satu kelebihan strategik. Apabila anda boleh terangkan asas EV dengan yakin dan tepat, pelanggan akan rasa lebih pasti dalam membuat keputusan. Pengetahuan membina kredibiliti. Kredibiliti membina kepercayaan. Dan akhirnya, kepercayaan itulah yang mempengaruhi keputusan pembelian.</p>
+    </div>
+</div>
+
+
+<!-- SUMMARY SECTION BM -->
+<section class="summary-section">
+    <div class="summary-container">
+        <div class="summary-poster">
+            <img src=  "unnamed-3.png" alt="EV Poster">
+        </div>
+    </div>
+</section>
+	
+</div> <!-- End Malay -->
+
+</section>
+
+<footer>
+© 2026 Perodua EV Training Module
+</footer>
+
+<script>
+const eng = document.getElementById("english");
+const mal = document.getElementById("malay");
+const buttons = document.querySelectorAll(".language-switch button");
+
+function showEnglish(){
+    eng.style.display="block";
+    mal.style.display="none";
+    buttons[0].classList.add("active");
+    buttons[1].classList.remove("active");
+}
+
+function showMalay(){
+    eng.style.display="none";
+    mal.style.display="block";
+    buttons[1].classList.add("active");
+    buttons[0].classList.remove("active");
+}
+
+// Default show English
+showEnglish();
+</script>
+
+</body>
+</html>
